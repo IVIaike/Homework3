@@ -52,5 +52,19 @@ public class Variables2 {
         boolean boardQuantity = boardAnotherHome >= bigBoardAnotherHome;
         System.out.println("Верно ли утверждение, что на стройплощадке другого дома количество обычных досок больше, чем больших - " + boardQuantity );
 
+        // Задание 3
+        System.out.println("Задание 3");
+
+        byte teacherLP = 23;
+        byte teacherAS = 27;
+        byte teacherEA = 30;
+        System.out.println("У Людмилы Павловны " + teacherLP + " ученика , у Анны Сергеевны " + teacherAS + " учеников и у Екатерины Андреевны – " + teacherEA + " учеников.");
+
+        short paper = 480;
+        System.out.println("Три учительницы закупили все вместе " + paper + " листов бумаги");
+
+        int paperQtyPerStudent = 480/(teacherLP+teacherAS+teacherEA); // Хотел поставить тип byte или short но Идейка потребовала выбрать int
+        System.out.println("На каждого ученика рассчитано " + paperQtyPerStudent + " листов бумаги");
+
     }
 }
