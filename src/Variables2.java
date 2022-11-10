@@ -66,5 +66,24 @@ public class Variables2 {
         int paperQtyPerStudent = 480/(teacherLP+teacherAS+teacherEA); // Хотел поставить тип byte или short но Идейка потребовала выбрать int
         System.out.println("На каждого ученика рассчитано " + paperQtyPerStudent + " листов бумаги");
 
+        // Задание 4
+        System.out.println("Задание 4");
+        byte bottleQty = 16;
+        byte timeToProduce = 2;
+        int bottleMachineProductivity = bottleQty / timeToProduce;
+        System.out.println("Производительность машины по производству бутылок составляет " + bottleMachineProductivity + " бутылок в минуту");
+
+        int bottleMachineProductivityOnTwentyMinutes = bottleMachineProductivity*20;// за 20 минут
+        System.out.println("За 20 минут машина произвела бутылок " + bottleMachineProductivityOnTwentyMinutes + " штук");
+
+        int bottleMachineProductivityOnDay = bottleMachineProductivity*60*24;//в сутки
+        System.out.println("За 1 сутки машина произвела бутылок " + bottleMachineProductivityOnDay + " штук");
+
+        int bottleMachineProductivityOnThreeDay = bottleMachineProductivityOnDay*3; //за 3 дня
+        System.out.println("За 3 суток машина произвела бутылок " + bottleMachineProductivityOnThreeDay + " штук");
+
+        int bottleMachineProductivityOnMonth = bottleMachineProductivityOnDay*30; //за 1 месяц. Исходим из того, что в этом месяце 30 дней.
+        System.out.println("За 1 месяц машина произвела бутылок " + bottleMachineProductivityOnMonth + " штук");
+
     }
 }
