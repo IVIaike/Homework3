@@ -68,6 +68,7 @@ public class Variables2 {
 
         // Задание 4
         System.out.println("Задание 4");
+
         byte bottleQty = 16;
         byte timeToProduce = 2;
         int bottleMachineProductivity = bottleQty / timeToProduce;
@@ -84,6 +85,25 @@ public class Variables2 {
 
         int bottleMachineProductivityOnMonth = bottleMachineProductivityOnDay*30; //за 1 месяц. Исходим из того, что в этом месяце 30 дней.
         System.out.println("За 1 месяц машина произвела бутылок " + bottleMachineProductivityOnMonth + " штук");
+
+        //Задание 5
+        System.out.println("Задание 5");
+
+        byte paintTotal = 120;
+        System.out.println("На ремонт школы нужно " + paintTotal + " банок краски двух цветов: белой и коричневой");
+        byte whitePaintPerClass = 2;
+        byte brownPaintPerClass = 4;
+        byte paintPerClass = 2+4;
+        System.out.println("На ремонт одного класса нужно " + paintPerClass + " банок краски двух цветов: белой " + whitePaintPerClass + " банки и " + brownPaintPerClass + " банки коричневой");
+        int classes = paintTotal / paintPerClass;
+        System.out.println("Всего в школе классов " + classes);
+
+        int whitePaintTotal = whitePaintPerClass * classes;
+        int brownPaintTotal = brownPaintPerClass * classes;
+        System.out.println("В школе, где " + classes + " классов, нужно " + whitePaintTotal + " банок белой краски и " + brownPaintTotal + " банок коричневой краски");
+
+
+
 
     }
 }
