@@ -126,6 +126,24 @@ public class Variables2 {
         double sportBreakfastWeightKg = (sportBreakfastWeight / 1000.0);
         System.out.println("Вес спортивного завтрака в килограммах составляет " + sportBreakfastWeightKg + " кг.");
 
+        // Задание 7
+        System.out.println("Задание 7");
+
+        byte sportManWeightDeltaKg = 7;
+        int sportManWeightDelta = sportManWeightDeltaKg*1000;
+        System.out.println("Спортсмену нужно похудеть на " + sportManWeightDeltaKg + " килограмм или на " + sportManWeightDelta + " грамм.");
+        short dailyLostWeightMin = 250;
+        System.out.println("Минимальная потеря веса в день " + dailyLostWeightMin + " грамм.");
+        short dailyLostWeightMax = 500;
+        System.out.println("Максимальная потеря веса в день " + dailyLostWeightMax + " грамм.");
+        int daysToWeightLostMin = sportManWeightDelta / dailyLostWeightMax;
+        System.out.println("Если спортсмен будет терять по " + dailyLostWeightMax + " грамм, то он похудеет за " + daysToWeightLostMin + " дней.");
+        int daysToWeightLostMax = sportManWeightDelta / dailyLostWeightMin;
+        System.out.println("Если спортсмен будет терять по " + dailyLostWeightMin + " грамм, то он похудеет за " + daysToWeightLostMax + " дней.");
+        double daysToWeightLostAwg = (daysToWeightLostMin + daysToWeightLostMax)/2.0;
+        System.out.println("В среднем спортсмену понадобится " + daysToWeightLostAwg + " день, чтобы сбросить " + sportManWeightDeltaKg + " килограмм.");
+
+
 
     }
 }
