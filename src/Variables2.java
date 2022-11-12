@@ -102,7 +102,29 @@ public class Variables2 {
         int brownPaintTotal = brownPaintPerClass * classes;
         System.out.println("В школе, где " + classes + " классов, нужно " + whitePaintTotal + " банок белой краски и " + brownPaintTotal + " банок коричневой краски");
 
+        //Задание 6
+        System.out.println("Задание 6");
 
+        byte bananaWeight = 80;
+        byte bananaQuantity = 5;
+        int bananaTotal = bananaWeight*bananaQuantity;
+        System.out.println("Вес бананов в рецепте " + bananaTotal + " грамм.");
+        byte milkWeight = 105;
+        byte milkQuantity = 2;
+        int milkTotal = milkWeight*milkQuantity;
+        System.out.println("Вес молока в рецепте " + milkTotal + " грамм.");
+        byte iceCreamWeight = 100;
+        byte iceCreamQuantity = 2;
+        int iceCreamTotal = iceCreamWeight*iceCreamQuantity;
+        System.out.println("Вес мороженного в рецепте " + iceCreamTotal + " грамм.");
+        byte eggWeight = 70;
+        byte eggQuantity = 4;
+        int eggTotal = eggWeight*eggQuantity;
+        System.out.println("Вес яиц в рецепте " + eggTotal + " грамм.");
+        int sportBreakfastWeight = bananaTotal + milkTotal + iceCreamTotal + eggTotal;
+        System.out.println("Вес спортивного завтрака в граммах составляет " + sportBreakfastWeight + " гр.");
+        double sportBreakfastWeightKg = (sportBreakfastWeight / 1000.0);
+        System.out.println("Вес спортивного завтрака в килограммах составляет " + sportBreakfastWeightKg + " кг.");
 
 
     }
