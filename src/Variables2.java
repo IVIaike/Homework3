@@ -143,7 +143,43 @@ public class Variables2 {
         double daysToWeightLostAwg = (daysToWeightLostMin + daysToWeightLostMax)/2.0;
         System.out.println("В среднем спортсмену понадобится " + daysToWeightLostAwg + " день, чтобы сбросить " + sportManWeightDeltaKg + " килограмм.");
 
+        //Задание 8
+        System.out.println("Задание 8");
 
+        int currentSalaryMasha = 67760;
+        int currentSalaryDenis = 83690;
+        int currentSalaryKristina = 76230;
+
+        System.out.println("Текущая зарплата Маши составляет " + currentSalaryMasha + " рублей, Дениса " + currentSalaryDenis + " рублей, а Кристины " + currentSalaryKristina + " рублей.");
+
+        // рассчет годового дохода в старой зарплате
+
+        int currentYearSalaryMasha = currentSalaryMasha*12;
+        int currentYearSalaryDenis = currentSalaryDenis*12;
+        int currentYearSalaryKristina = currentSalaryKristina*12;
+
+        // рассчет новой зарплаты
+
+        double newSalaryMasha = currentSalaryMasha + currentSalaryMasha/10.0; // поставил double т.к. з/п могут быть не такими ровными и появится остаток и плавающая запятая
+        double newSalaryDenis = currentSalaryDenis + currentSalaryDenis/10.0;
+        double newSalaryKristina = currentSalaryKristina + currentSalaryKristina/10.0;
+
+        //проверяю, что с типом переменной double и не ровными з/п все считается корректно
+        System.out.println("Новая зарплата Маши составляет " + newSalaryMasha + " рублей, Дениса " + newSalaryDenis + " рублей, а Кристины " + newSalaryKristina + " рублей.");
+
+        double newYearSalaryMasha = newSalaryMasha*12;
+        double newYearSalaryDenis = newSalaryDenis*12;
+        double newYearSalaryKristina = newSalaryKristina*12;
+
+        //рассчет разницы в годовом доходе
+
+        double deltaYearSalaryMasha = newYearSalaryMasha - currentYearSalaryMasha;
+        double deltaYearSalaryDenis = newYearSalaryDenis - currentYearSalaryDenis;
+        double deltaYearSalaryKristina = newYearSalaryKristina - currentYearSalaryKristina;
+
+        System.out.println("Маша теперь получает " + newSalaryMasha + " рублей. Годовой доход вырос на " + deltaYearSalaryMasha + " рублей");
+        System.out.println("Денис теперь получает " + newSalaryDenis + " рублей. Годовой доход вырос на " + deltaYearSalaryDenis + " рублей");
+        System.out.println("Кристина теперь получает " + newSalaryKristina + " рублей. Годовой доход вырос на " + deltaYearSalaryKristina + " рублей");
 
     }
 }
